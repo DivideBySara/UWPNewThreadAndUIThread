@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <StackPanel x:Name="stackPanel">
+      <Button x:Name="btn1" Click="btn1_Click" Content="Find lots of primes" FontSize="50"/>
+    </StackPanel>
+    <TextBox x:Name="result" Grid.Row="1" FontSize="50" TextWrapping="Wrap" IsReadOnly="True" Text="Starter text"/>
+  </Grid>
 </Page>
